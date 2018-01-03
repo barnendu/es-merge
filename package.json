@@ -1,0 +1,20 @@
+{
+  "name": "es-merge",
+  "version": "1.0.1",
+  "description": "Elasticsearch utility to merge data with one type to another type of document.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Barnendu Pal",
+  "license": "ISC",
+  "dependencies": {
+    "child_process": "^1.0.2",
+    "elasticsearch": "^13.2.0",
+    "lodash": "^4.17.4",
+    "path": "^0.12.7",
+    "q": "^1.5.0",
+    "request": "^2.81.0",
+    "sync-request": "^4.1.0"
+  }
+}
