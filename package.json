@@ -1,6 +1,6 @@
 {
   "name": "es-merge",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Elasticsearch utility to merge data with one type to another type of document.",
   "main": "index.js",
   "scripts": {
@@ -10,11 +10,24 @@
   "license": "ISC",
   "dependencies": {
     "child_process": "^1.0.2",
-    "elasticsearch": "^13.2.0",
-    "lodash": "^4.17.4",
+    "elasticsearch": "^16.7.2",
+    "lodash": "^4.17.21",
     "path": "^0.12.7",
-    "q": "^1.5.0",
-    "request": "^2.81.0",
-    "sync-request": "^4.1.0"
-  }
+    "q": "^1.5.1",
+    "request": "^2.88.2",
+    "sync-request": "^6.1.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/barnendu/es-merge.git"
+  },
+  "bugs": {
+    "url": "https://github.com/barnendu/es-merge/issues"
+  },
+  "homepage": "https://github.com/barnendu/es-merge#readme",
+  "keywords": [
+    "elasticsearch",
+    "es",
+    "es-merge"
+  ]
 }

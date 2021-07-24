@@ -19,7 +19,7 @@ var scroll_id, scroll_size,dataCount;
   dataCount=0;
    var options = {
         method: 'POST',
-        url: 'http://' + config.source_server + '/'+ config.index +'/' + config.type1 + '/_search?search_type=scan&scroll=3m',
+        url: 'http://' + config.source_server + '/'+ config.index +'/' + config.type1 + '/_search?scroll=1m',
         headers: { contentType: 'application/json' },
         body: JSON.stringify(query)
     }
@@ -38,7 +38,7 @@ return deferred.promise;
    }
 function fetchNextDataSet(type){
                 if(scroll_size>0){
-                var url= 'http://' + config.source_server  +  '/_search/scroll?scroll=7m&scroll_id='+scroll_id;
+                var url= 'http://' + config.source_server  +  '/_search/scroll?scroll=1m&scroll_id='+scroll_id;
                 var res =synRequest('GET',url, {'headers': { 'contentType': 'application/json' }
                 });
                 scroll_size =JSON.parse(res.getBody('utf8')).hits.hits.length;
